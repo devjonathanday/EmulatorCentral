@@ -19,7 +19,7 @@ public class HubManagerData : MonoBehaviour
     private IEnumerator InitializeDatabase()
     {
         consoles.Clear();
-        var path = Application.streamingAssetsPath + "\\config.cfg";
+        var path = Application.persistentDataPath + "\\config.cfg";
         if (!File.Exists(path))
         {
             File.Create(path);

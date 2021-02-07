@@ -59,7 +59,7 @@ public static class HubManager
 
     public static void WriteConfigToFile()
     {
-        var path = Application.streamingAssetsPath + "\\config.cfg";
+        var path = Application.persistentDataPath + "\\config.cfg";
         List<string> lines = new List<string>();
         if (!File.Exists(path))
         {
